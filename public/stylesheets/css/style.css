@@ -1,0 +1,29 @@
+html {
+  height: 100%;
+  box-sizing: border-box; }
+
+body {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 50px;
+  padding-top: 70px; }
+
+.sticky-footer {
+  background-color: #222;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.footer-override,
+.sticky-footer {
+  height: 50px; }
+
+.map {
+  margin: 20px;
+  z-index: 2; }
+  .map.medium {
+    height: 580px; }
+
+.select-half {
+  width: 50%; }

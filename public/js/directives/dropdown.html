@@ -1,0 +1,9 @@
+<ui-select multiple ng-model="model.state" class="{{selectClass}}">
+    <ui-select-match placeholder="{{placeholderText}}">
+        {{$item.value}}
+    </ui-select-match>
+    <!-- TODO add factory to normalize data so that directive can handle arrays, key-val pairs etc. Currently only handles object literals -->
+    <ui-select-choices repeat="item as (key, item) in list | filter: {value:$select.search}">
+        <span ng-bind-html="item.value | highlight:$select.search"></span>
+    </ui-select-choices>
+</ui-select>
